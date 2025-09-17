@@ -1,115 +1,353 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sithole Tshepo Sipho — Portfolio (Video Replica)</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Sithole Tshepo Sipho — Portfolio</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Make sure this file is named exactly `style.css` and is in the same folder as index.html -->
+  <!-- the "?v=2" forces the browser to reload the CSS instead of using a cached copy -->
+  <link rel="stylesheet" href="./style.css?v=2" type="text/css" />
 </head>
 <body>
 
-  <header class="navbar-custom">
-    <div class="container nav-inner">
-      <div class="brand">Sithole Tshepo Sipho — Resume</div>
-      <nav class="nav-links">
-        <a href="#intro" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Sithole Tshepo Sipho</div>
+    <ul>
+          <li><a href="#intro">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="docs/CV_2023072508022261.pdf" download class="btn-cv">
+        Download CV
+      </a>
+    </li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="intro">
+    <div class="content">
+      <div class="hero-text">
+        <h1 class="hero-title">👋 Hi, I'm <span class="highlight">Sithole Tshepo Sipho</span></h1>
+        <h2 class="hero-subtitle">Salesforce Developer</h2>
+        <p class="typing-text">I am <span id="typed"></span></p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        
+        <img src="images/WhatsApp Image 2025-07-18 at 11.05.10_a46f197a_Nero_AI_Background_Remover.png" alt="Sithole Tshepo Sipho">
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <section id="intro" class="hero">
-      <div class="hero-left">
-        <div class="hero-card fade-up show">
-          <div class="h-title">Sithole Tshepo Sipho</div>
-          <div class="h-sub">Salesforce Developer — Quarphix Corporate</div>
-          <div class="contact-links">
-            <a href="mailto:tsheposipho97@gmail.com">tsheposipho97@gmail.com</a>
-            <span>•</span>
-            <a href="tel:0814163171">081 416 3171</a>
-          </div>
-
-          <div class="status-row" style="margin-top:14px;">
-            <div class="status">Assigned</div>
-            <div class="status">In Progress</div>
-            <div class="status active">Promoted</div>
-            <div class="status">Offboarded</div>
-          </div>
+  <!-- About -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-card">
+        <img src="images/ts_Nero_AI_Background_Remover.png" alt="Sithole Tshepo Sipho" class="profile-img">
+        <h3 class="name">Sithole Tshepo Sipho</h3>
+        <p class="role">Salesforce Developer</p>
+        <div class="contact-box">
+          <p>📧 tsheposipho97@gmail.com</p>
+          <p>📱 081 416 3171</p>
+          <p>📍 Johannesburg, South Africa</p>
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="hero-card fade-up show">
-          <img src="images/frame_2s.png" alt="profile" style="width:100%;border-radius:8px;display:block" />
-        </div>
-      </div>
-    </section>
+      <div class="about-text">
+        <button class="about-btn">Get to Know Me</button>
+        <h2>Passionate About Crafting Web & Salesforce Solutions with Code and Cloud</h2>
+        <p> I am a motivated and detail-oriented Web Developer and Junior Salesforce Developer with 1 year of hands-on experience in designing, customizing, and automating Salesforce solutions. My technical foundation includes proficiency in Apex, Salesforce Flow, Lightning Web Components, as well as front-end technologies such as HTML, CSS, JavaScript, and Python.
 
-    <section id="about" class="section">
-      <div class="card">
-        <h3>About</h3>
-        <div class="details">
-          <div class="left">
-            <p>I am a highly driven person, a hard worker, a fast learner, and I adapt fast. I only get satisfied when I see good results. I am currently doing a Salesforce internship at Quarphix corporate. I am seeking a role that will help me grow professionally and personally, while allowing me to continue learning and gaining experience at the workplace.</p>
-            <table class="info-table" style="margin-top:12px">
-              <tr><td>Full Name</td><td><strong>Sithole Tshepo Sipho</strong></td></tr>
-              <tr><td>Location</td><td>Clayville Ext 76, 1620, South Africa</td></tr>
-              <tr><td>Email</td><td>tsheposipho97@gmail.com</td></tr>
-              <tr><td>Phone</td><td>081 416 3171</td></tr>
-            </table>
+Currently, I am completing a Salesforce internship at Quarphix, where I contribute to both software development and DevOps initiatives. My responsibilities include provisioning and managing AWS infrastructure using Terraform, working with EC2, ECS, and ELB services, implementing CI/CD pipelines with GitHub Actions, and optimizing system performance with CloudWatch monitoring and logging.
+
+This unique blend of application development and cloud operations enables me to build scalable, reliable, and end-to-end solutions that support real-world business needs. I am now seeking a role that offers the opportunity to grow both professionally and personally — where I can contribute to impactful projects while continuing to learn and expand my skill set in a dynamic work environment.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Projects Completed</p>
           </div>
-          <div class="right">
-            <div style="text-align:center">
-              <img src="images/frame_4s.png" alt="screenshot" style="max-width:100%;border-radius:8px" />
-            </div>
+          <div class="stat">
+            <h3>1+</h3>
+            <p>Years Experience</p>
+          </div>
+          <div class="stat">
+            <h3>98%</h3>
+            <p>Client Satisfaction</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-      <h3>Projects</h3>
-      <div class="projects-grid">
-        <div class="project-card"><div class="project-thumb">IT</div><div><h4>Quarphix Intern Tracking App</h4><p>Dashboard & automation for intern lifecycle.</p></div></div>
-        <div class="project-card"><div class="project-thumb">SF</div><div><h4>Salesforce Admin Dashboard</h4><p>Monitoring and reporting dashboards.</p></div></div>
-        <div class="project-card"><div class="project-thumb">TP</div><div><h4>Training Program Management</h4><p>Assign modules & track progress.</p></div></div>
-      </div>
-    </section>
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Front-end Development</h3>
+        <div class="skill"><p>HTML/CSS</p><div class="progress"><div class="progress-bar" style="width:92%">92%</div></div></div>
+        <div class="skill"><p>JavaScript</p><div class="progress"><div class="progress-bar" style="width:85%">85%</div></div></div>
+        <div class="skill"><p>GitHub Actions (CI/CD)</p><div class="progress"><div class="progress-bar" style="width:80%">80%</div></div></div>
+        <div class="skill"><p>AWS (EC2, ECS, ELB, CloudWatch, IAM)</p><div class="progress"><div class="progress-bar" style="width:78%">78%</div></div></div>
+        <div class="skill"><p>Terraform</p><div class="progress"><div class="progress-bar" style="width:75%">75%</div></div></div>
+        <div class="skill"><p>Apex</p><div class="progress"><div class="progress-bar" style="width:72%">72%</div></div></div>
+        <div class="skill"><p>Salesforce Development</p><div class="progress"><div class="progress-bar" style="width:72%">72%</div></div></div>
+        <div class="skill"><p>Lightning Web Component</p><div class="progress"><div class="progress-bar" style="width:71%">71%</div></div></div>
+        <div class="skill"><p>Node.js</p><div class="progress"><div class="progress-bar" style="width:70%">70%</div></div></div>
+        <div class="skill"><p>Python</p><div class="progress"><div class="progress-bar" style="width:70%">70%</div></div></div>
+        <div class="skill"><p>SQL</p><div class="progress"><div class="progress-bar" style="width:65%">65%</div></div></div>
+      
+    </div>
+  </section>
 
-    <section id="testimonials" class="section">
-      <h3>Reviews</h3>
-      <div class="card">
-        <div style="display:flex;gap:12px;align-items:center">
-          <img src="images/placeholder-testimonial.png" alt="thumb" style="width:72px;border-radius:8px" />
-          <div>
-            <p>"Sithole is a hardworking and fast learner, with excellent interpersonal skills."</p>
-            <strong>Puleng Maphela — Supervisor</strong>
-          </div>
+  <!-- Resume Section -->
+<section id="resume">
+  <h2 class="section-title">Resume</h2>
+  <div class="resume-container">
+
+    <!-- Sidebar -->
+    <div class="resume-sidebar">
+      <button class="tab active" data-tab="experience">💼 Experience</button>
+      <button class="tab" data-tab="education">🎓 Education</button>
+    </div>
+
+    <!-- Content -->
+    <!-- Experience Tab -->
+<div class="tab-content active" id="experience">
+  <div class="resume-card">
+    <h3>Salesforce Developer</h3>
+    <p class="company">Quarphix Company | Aug 2024 – Present</p>
+    <ul>
+      <li>Developed Lightning Web Components, Flows, and API integrations.</li>
+      <li>Utilized SOQL for querying Salesforce data.</li>
+      <li>Customized Salesforce using declarative tools...</li>
+      <li>Implemented DevOps practices with AWS, Terraform, GitHub Actions, CloudWatch on the SquadEx website we are working on.</li>
+    </ul>
+  </div>
+
+  <div class="resume-card">
+    <h3>ICT and General Work</h3>
+    <p class="company">Chris J Botha Secondary School | Oct 2022 – Apr 2023</p>
+    <ul>
+      <li>Registered learners and captured results using SA-SAMS.</li>
+      <li>Assisted with learner admissions, attendance, and marks management.</li>
+      <li>Provided technical support for teachers and learners in the computer lab.</li>
+      <li>Installed, updated, and troubleshot software and hardware.</li>
+      <li>Helped staff use Microsoft Office.</li>
+      <li>Maintained internet and network connectivity.</li>
+      <li>Supported digital learning by helping teachers integrate ICT tools.</li>
+      <li>Ensured safe, secure, and responsible use of ICT equipment.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Education -->
+<div class="tab-content" id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="education-container">
+    <div class="resume-card">
+      <h3>National Certificates in Business Management (N4 – N6)</h3>
+      <p class="company">Central Johannesburg TVET College | 2023</p>
+      <a href="docs/business_management.pdf" class="download-btn" download>📄 Download</a>
+    </div>
+
+    <div class="resume-card">
+      <h3>Systems Development Level 5</h3>
+      <p class="company">Xtensive ICT Academy | 2023</p>
+      <a href="docs/systems_development.pdf" class="download-btn" download>📄 Download</a>
+    </div>
+
+    <div class="resume-card">
+      <h3>National Senior Certificate (Matric) – Bachelor</h3>
+      <p class="company">Jim Chavani High School | 2016</p>
+      <a href="docs/matric.pdf" class="download-btn" download>📄 Download</a>
+    </div>
+  </div>
+
+  <!-- Certificates under Education -->
+  <h2 class="section-title">Acquired <span>Certificate</span></h2>
+  <div class="certificates-container">
+    <div class="certificate-card">
+      <h3>Salesforce Certified Administrator</h3>
+      <p>
+        Demonstrated proficiency in Salesforce administration, including managing users, 
+        data, and security, as well as automating business processes and generating 
+        reports and dashboards.
+      </p>
+      <p class="issuer">Salesforce | 2024</p>
+      <a href="docs/salesforce_admin.pdf" class="download-btn" download>📄 Download</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Salesforce AI Certified Associate</h3>
+      <p>
+        Validates knowledge of AI concepts and tools like Einstein within the Salesforce ecosystem. 
+        Focuses on AI applications for data insights, automation, and enhancing business processes.
+      </p>
+      <p class="issuer">Salesforce | 2024</p>
+      <a href="docs/salesforce_ai.pdf" class="download-btn" download>📄 Download</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+<!-- Quarphix Intern Tracking App -->
+<div class="project-card">
+  <h3>Quarphix Intern Tracking App</h3>
+  <p>A Salesforce-based application to manage interns, track progress, and assignments. 
+     Built using <strong>Lightning Web Components</strong>, Apex, Flows, and SOQL for data management.</p>
+
+  <!-- Screenshot Gallery -->
+  <div class="project-gallery">
+    <img src="images/sales force app.png" alt="Quarphix Intern Tracking App Screenshot 1">
+    <img src="images/Screenshot (2).png" alt="Quarphix Intern Tracking App Screenshot 2">
+    <img src="images/Screenshot (3).png" alt="Quarphix Intern Tracking App Screenshot 3">
+  </div>
+
+  <a href="https://github.com/TshepoSiphoSithole/Intern-Tracking-App" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+<!-- SquardEx Website -->
+<div class="project-card">
+  <h3>SquardEx Website</h3>
+  <p>Developed and deployed a web platform using <strong>AWS</strong> and DevOps practices. 
+     Provisioned resources with <strong>Terraform</strong>, managed <strong>EC2, ECS, and ELB</strong>, 
+     implemented <strong>CI/CD pipelines</strong> with GitHub Actions, and optimized monitoring with <strong>CloudWatch</strong>.</p>
+
+  <!-- Screenshot Gallery -->
+  <div class="project-gallery">
+    <img src="images/squardex1.png" alt="SquardEx Website Screenshot 1">
+    <img src="images/squardex2.png" alt="SquardEx Website Screenshot 2">
+    <img src="images/squardex3.png" alt="SquardEx Website Screenshot 3">
+  </div>
+
+  <a href="https://github.com/YourGitHubUsername/SquardEx-Website" class="btn" target="_blank">View on GitHub</a>
+</div>
+
+
+
+
+
+  </section>
+
+
+
+  <!-- Contact -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>If you’d like to get in touch, here are my details:</p>
+
+      <div class="info-item">
+        <span class="icon">📍</span>
+        <div>
+          <h4>Location</h4>
+          <p>Johannesburg, South Africa</p>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="section">
-      <div class="card">
-        <h3>Contact</h3>
-        <p>If you'd like to work together — email me at <a href="mailto:tsheposipho97@gmail.com">tsheposipho97@gmail.com</a> or call 081 416 3171</p>
+      <div class="info-item">
+        <span class="icon">📞</span>
+        <div>
+          <h4>Phone</h4>
+          <p>+27 81 416 3171</p>
+        </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div>© 2025 Sithole Tshepo Sipho — Quarphix Corporate</div>
-    </footer>
-  </main>
+      <div class="info-item">
+        <span class="icon">✉️</span>
+        <div>
+          <h4>Email</h4>
+          <p>tsheposipho97@gmail.com</p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Get In Touch</h3>
+      <p>Send me a message and I’ll get back to you as soon as possible.</p>
+      <form action="mailto:tsheposipho97@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer>© 2025 Sithole Tshepo Sipho. All Rights Reserved.</footer>
+
+  <!-- typed.js for the "I am ..." animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
-    // simple reveal for elements with class fade-up
-    document.addEventListener('DOMContentLoaded', function(){
-      document.querySelectorAll('.fade-up').forEach(function(el){ el.classList.add('show'); });
+    var typed = new Typed("#typed", {
+      strings: ["a Salesforce Developer", "a Web Developer", "a Tech Enthusiast"],
+      typeSpeed: 70, backSpeed: 50, backDelay: 1500, loop: true
     });
   </script>
+
+
+    <script>
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      // Remove active from all
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      // Add to clicked
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+</script>
+
+
+
 </body>
 </html>
