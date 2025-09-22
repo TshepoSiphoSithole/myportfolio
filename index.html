@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sithole Tshepo Sipho — Portfolio</title>
 
-  <!-- Google font (optional) -->
+  <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
   <!-- Make sure this file is named exactly `style.css` and is in the same folder as index.html -->
   <!-- the "?v=2" forces the browser to reload the CSS instead of using a cached copy -->
@@ -15,21 +17,21 @@
 <body>
 
   <!-- Navbar -->
-  <nav>
-    <div class="logo">Sithole Tshepo</div>
-    <ul>
-          <li><a href="#intro">Home</a></li>
+<nav>
+  <a href="#intro" class="logo">Sithole Tshepo</a>
+  <ul>
+    
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#resume">Resume</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
     <li>
-      <a href="DOCS/My CV.pdf" download class="btn-cv">
-        Download CV
-      </a>
+      <a href="docs/MyCV.pdf" download class="btn-cv">Download CV</a>
     </li>
-    </ul>
-  </nav>
+  </ul>
+</nav>
+
 
   <!-- Hero -->
   <section class="hero" id="intro">
@@ -237,8 +239,6 @@ This unique blend of application development and cloud operations enables me to 
     <img src="images/Screenshot (2).png" alt="Quarphix Intern Tracking App Screenshot 2">
     <img src="images/Screenshot (3).png" alt="Quarphix Intern Tracking App Screenshot 3">
   </div>
-
-  <a href="https://github.com/TshepoSiphoSithole/Intern-Tracking-App" class="btn" target="_blank">View on GitHub</a>
 </div>
 
 <!-- SquardEx Website -->
@@ -255,7 +255,6 @@ This unique blend of application development and cloud operations enables me to 
     <img src="images/squardex3.png" alt="SquardEx Website Screenshot 3">
   </div>
 
-  <a href="https://github.com/YourGitHubUsername/SquardEx-Website" class="btn" target="_blank">View on GitHub</a>
 </div>
 
 
@@ -271,35 +270,48 @@ This unique blend of application development and cloud operations enables me to 
   <h2 class="section-title">Contact Me</h2>
   <div class="contact-container">
 
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <h3>Contact Info</h3>
-      <p>If you’d like to get in touch, here are my details:</p>
+<!-- Contact Info -->
+<div class="contact-info">
+  <h3>Contact Info</h3>
+  <p>If you’d like to get in touch, here are my details:</p>
 
-      <div class="info-item">
-        <span class="icon">📍</span>
-        <div>
-          <h4>Location</h4>
-          <p>Johannesburg, South Africa</p>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <span class="icon">📞</span>
-        <div>
-          <h4>Phone</h4>
-          <p>+27 81 416 3171</p>
-        </div>
-      </div>
-
-      <div class="info-item">
-        <span class="icon">✉️</span>
-        <div>
-          <h4>Email</h4>
-          <p>tsheposipho97@gmail.com</p>
-        </div>
-      </div>
+  <!-- Location -->
+  <div class="info-item">
+    <span class="icon">📍</span>
+    <div>
+      <h4>Location</h4>
+      <p>Johannesburg, South Africa</p>
     </div>
+  </div>
+
+  <!-- Phone -->
+  <div class="info-item">
+    <span class="icon">📞</span>
+    <div>
+      <h4>Phone</h4>
+      <p>+27 81 416 3171</p>
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div class="info-item">
+    <span class="icon">✉️</span>
+    <div>
+      <h4>Email</h4>
+      <p>tsheposipho97@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- GitHub -->
+  <div class="info-item">
+    <span class="icon"><i class="fab fa-github"></i></span>
+    <div>
+      <h4>GitHub</h4>
+      <p><a href="https://github.com/TshepoSiphoSithole" target="_blank">github.com/TshepoSiphoSithole</a></p>
+    </div>
+  </div>
+</div>
+
 
     <!-- Contact Form -->
     <div class="contact-form">

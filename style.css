@@ -16,7 +16,20 @@ nav{
   background:rgba(10,10,10,0.98);
   border-bottom:1px solid rgba(255,255,255,0.05);
 }
-nav .logo { color:#ff4d4d; font-weight:700; }
+
+.logo {
+
+  font-weight: 700;
+  color: #e63946; /* red accent */
+  text-decoration: none; /* removes underline */
+  margin-left: 20px; /* push logo a bit to the left */
+  display: inline-block;
+}
+
+.logo:hover {
+  color: #f4c6c9; /* lighter red on hover */
+}
+
 nav ul { list-style:none; display:flex; gap:22px; }
 nav ul a { color:#fff; text-decoration:none; font-weight:500; }
 nav ul a:hover { color:#ff4d4d; }
@@ -363,4 +376,34 @@ footer{ text-align:center; padding:28px; color:#888; border-top:1px solid rgba(2
 
 .contact-form .btn:hover {
   background: #e63939;
+}
+
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-item .icon {
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.info-item .icon i {
+  color: white; /* GitHub brand color */
+}
+
+.info-item a {
+  color: white; /* purple accent for links */
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
 }
