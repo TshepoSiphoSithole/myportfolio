@@ -26,6 +26,41 @@ nav{
   display: inline-block;
 }
 
+/* Logo styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.logo-white {
+  color: #ffffff; /* white */
+}
+
+.logo-red {
+  color: #e63946; /* red accent */
+}
+
+/* Download CV button */
+.btn-cv {
+  background: #e63946;   /* red background */
+  color: #ffffff;        /* white text */
+  padding: 1px 16px;
+  border-radius: 6px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-cv:hover {
+  background: #ffffff;   /* white background */
+  color: #e63946;        /* red text */
+  border: 1px solid #e63946;
+}
+
+
 .logo:hover {
   color: #f4c6c9; /* lighter red on hover */
 }
